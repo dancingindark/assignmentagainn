@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="[https://fonts.googleapis.com/css?family=Roboto](https://fonts.googleapis.com/css?family=Roboto)" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="[http://code.jquery.com/jquery-latest.min.js](http://code.jquery.com/jquery-latest.min.js)" type="text/javascript"></script>
+    <script src="weather.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class='center'>
+      <h1>
+        Welcome to Data Storage Systems AWS Website!!
+      </h1>
+      <button id='weather_button' class='basic_button' onclick="weather.js">
+       Weather at 32835 
+      </button>
+      <div class='error'>
+      </div>
+
+      <div class='weather'>
+          <div class='city-name text'>
+          </div>
+          <div class='weather-main text'>
+          </div>
+          <div class='description text'>
+          </div>
+      </div>
+    </div>
+    <script $(document).ready(function() {
+  $("#weather_button").click(function(e) {
+    console.log(e)
+    e.preventDefault();
+    $.ajax({
+      type: "POST",
+      data: 'json',
+      url: 'https://api.openweathermap.org/data/2.5/weather?zip=32835,us&appid=f89ad90821ae953a9ebf50119ed3a30d',
+      success: function(result) {
+        console.log(result)
+         console.log("here")
+        $( ".city-name" ).text(result.name);
+        $(".weather-main").text(
+          result.weather &&
+          result.weather[0] &&
+          result.weather[0].main
+        )
+        $(".description").text(
+          result.weather &&
+          result.weather[0] &&
+          result.weather[0].description
+        )
+      },
+      error: function(result) {
+        console.log('error', result)
+        $(".error").text(result.error)
+      }
+    });
+  });
+}); /script>
+  </body>
+</html>
+

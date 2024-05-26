@@ -1,0 +1,222 @@
+mshaunnessey:DTYo-3-2 mshaunnessey$ ./DTYo-assignment-3.2.sh
+Storage fsdty32
+Group sdcimnstructor
+Look for storage account
+[
+  {
+    "accessTier": "Hot",
+    "creationTime": "2020-04-26T03:02:32.877050+00:00",
+    "customDomain": null,
+    "enableAzureFilesAadIntegration": null,
+    "enableHttpsTrafficOnly": true,
+    "encryption": {
+      "keySource": "Microsoft.Storage",
+      "keyVaultProperties": null,
+      "services": {
+        "blob": {
+          "enabled": true,
+          "lastEnabledTime": "2020-04-26T03:02:32.955224+00:00"
+        },
+        "file": {
+          "enabled": true,
+          "lastEnabledTime": "2020-04-26T03:02:32.955224+00:00"
+        },
+        "queue": null,
+        "table": null
+      }
+    },
+    "failoverInProgress": null,
+    "geoReplicationStats": null,
+    "id": "/subscriptions/7f16de7c-7eb0-45ee-a32f-a41aa421a34b/resourceGroups/sdcimnstructor/providers/Microsoft.Storage/storageAccounts/fsdty32",
+    "identity": null,
+    "isHnsEnabled": null,
+    "kind": "StorageV2",
+    "lastGeoFailoverTime": null,
+    "location": "eastus",
+    "name": "fsdty32",
+    "networkRuleSet": {
+      "bypass": "AzureServices",
+      "defaultAction": "Allow",
+      "ipRules": [],
+      "virtualNetworkRules": []
+    },
+    "primaryEndpoints": {
+      "blob": "https://fsdty32.blob.core.windows.net/",
+      "dfs": "https://fsdty32.dfs.core.windows.net/",
+      "file": "https://fsdty32.file.core.windows.net/",
+      "queue": "https://fsdty32.queue.core.windows.net/",
+      "table": "https://fsdty32.table.core.windows.net/",
+      "web": "https://fsdty32.z13.web.core.windows.net/"
+    },
+    "primaryLocation": "eastus",
+    "provisioningState": "Succeeded",
+    "resourceGroup": "sdcimnstructor",
+    "secondaryEndpoints": null,
+    "secondaryLocation": null,
+    "sku": {
+      "capabilities": null,
+      "kind": null,
+      "locations": null,
+      "name": "Standard_LRS",
+      "resourceType": null,
+      "restrictions": null,
+      "tier": "Standard"
+    },
+    "statusOfPrimary": "available",
+    "statusOfSecondary": null,
+    "tags": {},
+    "type": "Microsoft.Storage/storageAccounts"
+  },
+  {
+    "accessTier": null,
+    "creationTime": "2020-03-23T11:55:28.756103+00:00",
+    "customDomain": null,
+    "enableAzureFilesAadIntegration": null,
+    "enableHttpsTrafficOnly": true,
+    "encryption": {
+      "keySource": "Microsoft.Storage",
+      "keyVaultProperties": null,
+      "services": {
+        "blob": {
+          "enabled": true,
+          "lastEnabledTime": "2020-03-23T11:55:28.834280+00:00"
+        },
+        "file": {
+          "enabled": true,
+          "lastEnabledTime": "2020-03-23T11:55:28.834280+00:00"
+        },
+        "queue": null,
+        "table": null
+      }
+    },
+    "failoverInProgress": null,
+    "geoReplicationStats": null,
+    "id": "/subscriptions/7f16de7c-7eb0-45ee-a32f-a41aa421a34b/resourceGroups/sdcimnstructor/providers/Microsoft.Storage/storageAccounts/storageaccountsdcim8e88",
+    "identity": null,
+    "isHnsEnabled": null,
+    "kind": "Storage",
+    "lastGeoFailoverTime": null,
+    "location": "eastus",
+    "name": "storageaccountsdcim8e88",
+    "networkRuleSet": {
+      "bypass": "AzureServices",
+      "defaultAction": "Allow",
+      "ipRules": [],
+      "virtualNetworkRules": []
+    },
+    "primaryEndpoints": {
+      "blob": "https://storageaccountsdcim8e88.blob.core.windows.net/",
+      "dfs": null,
+      "file": "https://storageaccountsdcim8e88.file.core.windows.net/",
+      "queue": "https://storageaccountsdcim8e88.queue.core.windows.net/",
+      "table": "https://storageaccountsdcim8e88.table.core.windows.net/",
+      "web": null
+    },
+    "primaryLocation": "eastus",
+    "provisioningState": "Succeeded",
+    "resourceGroup": "sdcimnstructor",
+    "secondaryEndpoints": null,
+    "secondaryLocation": null,
+    "sku": {
+      "capabilities": null,
+      "kind": null,
+      "locations": null,
+      "name": "Standard_LRS",
+      "resourceType": null,
+      "restrictions": null,
+      "tier": "Standard"
+    },
+    "statusOfPrimary": "available",
+    "statusOfSecondary": null,
+    "tags": {},
+    "type": "Microsoft.Storage/storageAccounts"
+  }
+]
+Set website params
+{
+  "cors": [],
+  "deleteRetentionPolicy": {
+    "days": null,
+    "enabled": false
+  },
+  "hourMetrics": {
+    "enabled": true,
+    "includeApis": true,
+    "retentionPolicy": {
+      "days": 7,
+      "enabled": true
+    },
+    "version": "1.0"
+  },
+  "logging": {
+    "delete": false,
+    "read": false,
+    "retentionPolicy": {
+      "days": null,
+      "enabled": false
+    },
+    "version": "1.0",
+    "write": false
+  },
+  "minuteMetrics": {
+    "enabled": false,
+    "includeApis": null,
+    "retentionPolicy": {
+      "days": null,
+      "enabled": false
+    },
+    "version": "1.0"
+  },
+  "staticWebsite": {
+    "enabled": true,
+    "errorDocument_404Path": "error.html",
+    "indexDocument": "index.html"
+  }
+}
+Finished[#############################################################]  100.0000%
+[
+  {
+    "Blob": "https://fsdty32.blob.core.windows.net/$web/policy.json",
+    "Last Modified": "2020-04-26T19:02:13+00:00",
+    "Type": "text/html; charset=utf-8",
+    "eTag": "\"0x8D7EA1454858942\""
+  },
+  {
+    "Blob": "https://fsdty32.blob.core.windows.net/$web/DTYo-assignment-3.2.sh",
+    "Last Modified": "2020-04-26T19:02:13+00:00",
+    "Type": "text/html; charset=utf-8",
+    "eTag": "\"0x8D7EA14548F00C2\""
+  },
+  {
+    "Blob": "https://fsdty32.blob.core.windows.net/$web/index.html",
+    "Last Modified": "2020-04-26T19:02:13+00:00",
+    "Type": "text/html; charset=utf-8",
+    "eTag": "\"0x8D7EA1454978DC2\""
+  },
+  {
+    "Blob": "https://fsdty32.blob.core.windows.net/$web/styles.css",
+    "Last Modified": "2020-04-26T19:02:13+00:00",
+    "Type": "text/html; charset=utf-8",
+    "eTag": "\"0x8D7EA14549FCC99\""
+  },
+  {
+    "Blob": "https://fsdty32.blob.core.windows.net/$web/weather.js",
+    "Last Modified": "2020-04-26T19:02:13+00:00",
+    "Type": "text/html; charset=utf-8",
+    "eTag": "\"0x8D7EA1454A80B6B\""
+  },
+  {
+    "Blob": "https://fsdty32.blob.core.windows.net/$web/index1.html",
+    "Last Modified": "2020-04-26T19:02:13+00:00",
+    "Type": "text/html; charset=utf-8",
+    "eTag": "\"0x8D7EA1454B0714D\""
+  },
+  {
+    "Blob": "https://fsdty32.blob.core.windows.net/$web/error.html",
+    "Last Modified": "2020-04-26T19:02:13+00:00",
+    "Type": "text/html; charset=utf-8",
+    "eTag": "\"0x8D7EA1454B8B024\""
+  }
+]
+https://fsdty32.z13.web.core.windows.net/
+mshaunnessey:DTYo-3-2 mshaunnessey$ 
